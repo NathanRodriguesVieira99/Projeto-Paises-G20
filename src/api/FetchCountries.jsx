@@ -23,22 +23,3 @@ export const fetchCountries = async () => {
     return [];
   }
 };
-
-// puxando os detalhes dos paises
-export const fetchCountryDetails = async (countryName) => {
-  try {
-    const response = await axios.get(`https://restcountries.com/v3.1/name/${countryName}`);
-    const countryDetails = response.data[0];
-
-    return {
-      name: countryDetails.name.common,
-      capital: countryDetails.capital ? countryDetails.capital[0] : 'N/A',
-      region: countryDetails.region,
-      languages: countryDetails.languages ? Object.values(countryDetails.languages)[0] : 'N/A',
-      tld: countryDetails.tld ? countryDetails.tld[0] : 'N/A',
-    };
-  } catch (error) {
-    console.error(`Erro ao buscar dados do país ${countryName}`, error);
-    return null;
-  }
-};

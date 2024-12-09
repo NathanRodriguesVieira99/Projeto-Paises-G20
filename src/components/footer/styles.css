@@ -1,5 +1,27 @@
+
+
 .footer-container {
-  margin-top: auto;
-  z-index: 2;
-  background-color: #cacaca;
+  margin-top: 50px;
+  background-color: #ffffff;
+  height: 90px;
+ 
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+hr {
+  border-bottom: 1px solid #007bff;
+  margin-bottom: 80px;
+  width: 65%;
 }

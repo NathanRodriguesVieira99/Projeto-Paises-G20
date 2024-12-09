@@ -1,10 +1,17 @@
+import React from 'react'
+import RIO from '../../assets/wallpaperHome.jpg'
+
 import './styles.css'
 
-function Home() {
+const Home = () => {
   return (
-    <div className="">
-      <h1>Home</h1>
-    </div>
+    <>
+      <img
+        src={RIO}
+        alt="rio de janeiro"
+        style={{ width: '100%', height: '90vh', objectFit: 'cover' }}
+      />
+    </>
   )
 }
 

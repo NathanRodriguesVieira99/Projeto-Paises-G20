@@ -6,20 +6,10 @@
   text-decoration: none;
 }
 
-html,
-body {
+html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 main {
-  flex: 1;
-  margin-left: 18%;
-  margin-top: 2%;
-}
-
-.Odin {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }

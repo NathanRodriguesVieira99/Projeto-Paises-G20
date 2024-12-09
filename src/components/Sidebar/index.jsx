@@ -1,29 +1,25 @@
-import React, { useState } from 'react';
-import './styles.css';
+import React from 'react';
 
-export const Sidebar = ({ countries }) => {
-  const [selectedCountry, setSelectedCountry] = useState(null);
+import './styles.css'
 
-  const toggleCountryInfo = (countryName) => {
-    setSelectedCountry(countryName);
-  };
-
+export const Sidebar = ({ countries, onCountryClick, selectedCountry }) => {
   return (
-    <>
+    <div className="odinSidebar">
       <div className="sidebar">
-        <h3>Países participantes</h3>
         <ul>
           {countries.map((country) => (
             <li
-              key={country}
-              className={selectedCountry === country ? 'selected' : ''}
-              onClick={() => toggleCountryInfo(country)}
+              key={country.cca3}
+              onClick={() => onCountryClick(country)}
+              className={selectedCountry?.cca3 === country.cca3 ? 'selected' : ''}
             >
-              {country}
+              {country.name.common}
             </li>
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
+
+export default Sidebar;

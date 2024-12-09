@@ -1,0 +1,7 @@
+.odinCountries {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 1px solid #2980b9;
+  box-sizing: border-box;
+}

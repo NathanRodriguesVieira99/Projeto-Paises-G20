@@ -1,0 +1,5 @@
+.odinRegionSelector {
+  display: flex;
+  margin-left: 260px;
+  flex-flow: column wrap;
+}

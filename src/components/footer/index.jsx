@@ -3,7 +3,14 @@ import './styles.css'
 
 export const Footer = () => {
   return (
-    <footer className='footer-container'>Footer</footer>
+    <div>
+      <footer className='footer-container'>
+        <div className="copyright">
+          <p>.أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ، الاحتياجات</p>
+          <hr />
+        </div>
+      </footer>
+    </div>
   )
 }
 

@@ -1,14 +1,14 @@
-import { Outlet } from 'react-router-dom'
 
 import './styles/globals.css'
 
 import { Navbar } from './components/Navbar/index'
 import { Footer } from './components/footer/index'
 
-function App() {
+import { Outlet } from 'react-router-dom'
 
+function App() {
   return (
-    <div className="Odin">
+    <div>
       <Navbar />
       <main>
         <Outlet />
